@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poetry Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Poetry and Image Search and Visualizer Application">
+    
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+    <link href="float-grid.css" rel="stylesheet"/>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <main role="main">
+        <header class="row" role="banner">
+            <div class="col-12">
+                <h1>Poetry Visualizer</h1>
+            </div>
+        </header>
+        <div class="contentContainer css-container" aria-live="polite">
+            <h2>Placeholder for the Content Container</h2>
+        </div>
+        <section class="introPage">
+            <h2>Here is the main search page for this application.</h2>
+            <form class="searchForm">
+                <div>
+                    <label for="searchWord">Enter a word to search</label>
+                    <input type="text" class="keyword" required>
+                    <label for="searchAuthor">Optional: enter an author to search</label>
+                    <input type="text" class="author">
+                </div>
+                <div>
+                    <button>Search</button>
+                </div>
+            </form>
+        </section>
+        <section class="noResultsPage">
+            <h2>This page shows no results. Please try again!</h2>
+            <p>Helper text of possible valid searches.</p>
+            <form>
+                <div>
+                    <label for="searchWord">Enter a word to search</label>
+                    <input type="text" class="keyword" required>
+                    <label for="searchAuthor">Optional: enter an author to search</label>
+                    <input type="text" class="author">
+                </div>
+                <div>
+                    <button>Search</button>
+                </div>
+            </form>
+        </section>
+        <section class="poetryAndImagesFoundPage">
+            <h2>This page shows results for the poetry and image!</h2>
+            <section>
+                <p>placeholder for Image1</p>
+                <p>===Info about the image above</p> 
+            </section>
+            <section>
+                <p>placeholder for Poem</p>
+                <p>===Info about the poem above</p> 
+            </section>
+            <section>
+                <p>placeholder for additional images, if any</p>
+                <p>===Info about the image</p> 
+            </section>
+            <div>
+                <button>Start Over</button>
+            </div>
+        </section>
+        <section class="poemOnlyPage">
+            <h2>This page shows poem result only, and a consolation image.</h2>
+            <section>
+                <p>placeholder for Poem</p>
+                <p>===Info about the Poem</p> 
+            </section>
+            <section>
+                <p>placeholder for Image</p>
+                <p>===Info about the image</p> 
+            </section>
+            <div>
+                <button>Start Over</button>
+            </div>
+
+        </section>
+        <section class="imageOnlyPage">
+            <h2>This page shows an image result only, and a consolation poem.</h2>
+            <section>
+                <p>placeholder for Image</p>
+                <p>===Info about the image</p> 
+            </section>
+            <section>
+                <p>placeholder for Poem</p>
+                <p>===Info about the Poem</p> 
+            </section>
+            <div>
+                <button>Start Over</button>
+            </div>
+    
+        </section>
+
+    </main>
+  
+    
+</body>
+    <footer class="row" role="contentinfo">
+        <p>This application uses paintings from the Rijksmuseum.</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</html>
