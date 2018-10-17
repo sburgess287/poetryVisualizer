@@ -1,9 +1,9 @@
 'use strict';
 
-function showWelcomePage(){
-    // loads the first page of the quiz
-    console.log('showWelcomePageRan');
-}
+// function showWelcomePage(){
+//     // loads the first page of the quiz
+//     console.log('showWelcomePageRan');
+// }
 
 
 function searchPoetryDB(){
@@ -28,14 +28,13 @@ function restartSearch(){
 }
 
 function handleApp(){
-    // Show welcome page
-    showWelcomePage();
+    // // Show welcome page not needed because I'm showing 1 page
+    // various search results
+    // showWelcomePage();
 
     // Event listener on the parent element (container for the search)
     $('.contentContainer').on('submit', 'form.searchForm', searchBothApis);
 
-    // Event listener on the start over button to go back to Main page
-    $('.contentContainer').on('click', 'restartSearch', restartSearch)
 }
 
 $(handleApp);

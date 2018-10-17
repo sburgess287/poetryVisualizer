@@ -18,28 +18,34 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <main role="main">
+    <main role="main" aria-live="assertive">
         <header class="row" role="banner">
             <div class="col-12">
                 <h1>Poetry Visualizer</h1>
             </div>
         </header>
-        <div class="contentContainer css-container" aria-live="polite">
+        <!-- <div class="contentContainer css-container" aria-live="polite">
             <h2>Placeholder for the Content Container</h2>
-        </div>
+        </div> -->
         <section class="introPage">
-            <h2>Here is the main search page for this application.</h2>
-            <form class="searchForm">
-                <div>
-                    <label for="searchWord">Enter a word to search</label>
-                    <input type="text" class="keyword" required>
-                </div>
-                <div>
-                    <button>Search</button>
-                </div>
+            <h2>Enter a word to find a related poem and image.</h2>
+            <form class="searchForm js-search-form">
+             
+                <label for="searchWord">Enter a word to search</label>
+                <input type="text" class="keyword" required>
+                <button type="submit">Search</button>
+         
             </form>
         </section>
-        <section class="noResultsPage">
+        <p id="js-error-message" class="error-message"></p>
+        <section role="region" id="results" class="hidden">
+            <h2 role="heading">Results</h2>
+            <ul class="js-search-results">
+
+            </ul>
+        </section>
+
+        <!-- <section class="noResultsPage">
             <h2>This page shows no results. Please try again!</h2>
             <p>Helper text of possible valid searches.</p>
             <form>
@@ -113,14 +119,14 @@
                 </div>
             </form>
     
-        </section>
+        </section> -->
 
     </main>
   
     
 </body>
     <footer class="row" role="contentinfo">
-        <p>This application uses paintings from the Rijksmuseum.</p>
+        <p>Footer text: This application uses paintings from the Rijksmuseum.</p>
     </footer>
     <script type="text/javascript" src="index.js"></script>
 </html>
