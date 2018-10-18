@@ -17,12 +17,12 @@ function searchMuseumDB(){
     // search the museum db for results
 }
 
-function searchBothApis(){
-    // search Poetry DB function
-    searchPoetryDB();
-    // search Museum DB function
-    searchMuseumDB();
-}
+// function searchBothApis(){
+//     // search Poetry DB function
+//     searchPoetryDB();
+//     // search Museum DB function
+//     searchMuseumDB();
+// }
 
 function getDataFromApi(){
     console.log('getDataFromApi ran');
